@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev":  "concurrently \"vue-cli-service serve\" \"node ./index.js\"",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@hapi/hapi": "^20.2.1",
+    "concurrently": "^7.0.0",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
